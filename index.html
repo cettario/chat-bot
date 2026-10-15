@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат-бот</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/chatbot.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <main class="chat">
+        <h1 class="chat__title">Чат-бот</h1>
+        <section class="chat__messages" id="messages" aria-label="Сообщения" aria-live="polite" aria-relevant="additions text"></section>
+        <form class="chat__form" id="messageForm" autocomplete="off">
+            <div class="chat__input-wrap">
+                <input id="messageInput" class="chat__input" type="text" aria-label="Сообщение" placeholder="Сообщение" maxlength="2000" autocomplete="off">
+                <span class="chat__input-typing" id="inputTyping" hidden aria-hidden="true"><span></span><span></span><span></span></span>
+            </div>
+            <button class="chat__send" id="sendButton" type="submit" aria-label="Отправить" disabled>
+                <img src="assets/paper-plane.svg" alt="">
+                <span>Отправить</span>
+            </button>
+        </form>
+    </main>
+</body>
+</html>
